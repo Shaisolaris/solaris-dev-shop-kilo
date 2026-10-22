@@ -1,0 +1,15 @@
+{
+  "host": "Kilo 7.8.15",
+  "source": "cfd9a91b475f7f3ab3f1d815cd959e4b07aaefd2",
+  "transport": "named npm-compatible Git",
+  "nativeWorkflows": 62,
+  "matchingProfileFilesAndModes": 1973,
+  "canonicalFiles": 1197,
+  "nativeCallerContexts": 62,
+  "coordinatorAssignment": "solaris.code-reviewer",
+  "compositeProvenance": "consistent",
+  "modelCalls": 0,
+  "pass": true,
+  "os": "macOS arm64",
+  "scope": "Actual authenticated V2 API and all product files/modes/callers; no model/VSCode/TUI claim"
+}
