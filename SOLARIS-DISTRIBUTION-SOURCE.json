@@ -7,6 +7,7 @@
   "specialists": 61,
   "coordinator": 1,
   "newCoreEmployeeCapabilities": 0,
-  "transportStatus": "Root npm-style Git transport under actual native validation; not yet accepted",
-  "scope": "Native V2 skill hook; no model call or authority grant"
+  "transportStatus": "Native7.8.15 V2 named npm-compatible public Git installation passed on macOS; catalog git: transport remains held",
+  "scope": "Native V2 skill catalog plus deterministic local callers. No model, VS Code, TUI-session or authority-grant claim.",
+  "testedRootRevision": "3e3c611e82bee0885721c238e5c09fd5dc0d7d13"
 }
