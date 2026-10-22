@@ -86,6 +86,11 @@ def main():
             installed = list((work / 'cache/kilo/packages').rglob('solaris-dev-shop-kilo/native/skills.json'))
             assert len(installed) == 1, installed
             root = installed[0].parent.parent
+            expected_names = {p.relative_to(args.reference).as_posix()
+                              for p in args.reference.rglob('*') if p.is_file()}
+            assert not any(p.is_symlink() for p in root.rglob('*')), 'Symlink in native installed package'
+            actual_names = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
+            assert actual_names == expected_names, 'Missing or unexpected installed product files'
             count = 0
             for source in args.reference.rglob('*'):
                 if not source.is_file():
@@ -94,7 +99,7 @@ def main():
                 assert target.is_file() and not target.is_symlink() and target.read_bytes() == source.read_bytes(), source
                 assert bool(target.stat().st_mode & 0o111) == bool(source.stat().st_mode & 0o111), source
                 count += 1
-            assert count == 1972, count
+            assert count == 1973, count
             by_name = {item['name']: item for item in rows}
             for item in index:
                 actual = by_name[item['name']]
@@ -105,9 +110,9 @@ def main():
                 assert actual['content'] == expected, item['name']
                 result = subprocess.check_output([sys.executable, '-B', str(root / 'skills' / item['name'] / 'scripts/run.py'),
                                                   '--context'], cwd=workspace, env=env, text=True, timeout=15)
-                assert json.loads(result)['source_commit'] == 'ee38d3de3d4b0d5467a589d5cb908f4964f593fe'
+                assert json.loads(result)['source_commit'] == '3a577e42c48473f6ef8680950dd55c067820d5d3'
             provenance = json.loads((root / 'SOLARIS-BUILD-SOURCE.json').read_text())
-            assert len(provenance['canonical_files']) == 1196
+            assert len(provenance['canonical_files']) == 1197
             for path, digest in provenance['canonical_files'].items():
                 mapped = provenance.get('source_path_map', {}).get(path, path)
                 assert hashlib.sha256((root / mapped).read_bytes()).hexdigest() == digest, path
@@ -123,7 +128,7 @@ def main():
             check = json.loads(result)
             assert check['result'] == 'consistent' and not check['findings']
             print(json.dumps({'host': 'Kilo ' + version, 'source': args.ref, 'transport': 'named npm-compatible Git',
-                              'nativeWorkflows': len(rows), 'matchingProfileFilesAndModes': count, 'canonicalFiles': 1196,
+                              'nativeWorkflows': len(rows), 'matchingProfileFilesAndModes': count, 'canonicalFiles': 1197,
                               'nativeCallerContexts': 62, 'coordinatorAssignment': 'solaris.code-reviewer',
                               'compositeProvenance': 'consistent', 'modelCalls': 0, 'pass': True}, indent=2))
         finally:

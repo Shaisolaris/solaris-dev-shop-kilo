@@ -1,27 +1,13 @@
-# Solaris Dev Shop for Kilo
+# Solaris Dev Shop for Kilo0.64.0
 
-61 specialists and one chief-of-staff coordinator, with complete workflow sources and local delivery, recovery and evidence tools. The contained profile has 1972 files, including 1196 preserved canonical source files.
-
-## Verified native installation
-
-With Kilo CLI **7.8.15**, run this in the target project:
+61 specialists plus the coordinating workflow;1,973 complete profile files and1,197 canonical source files.
 
 ```sh
-kilo plugin 'solaris-dev-shop-kilo@github:Shaisolaris/solaris-dev-shop-kilo#3e3c611e82bee0885721c238e5c09fd5dc0d7d13'
+kilo plugin 'solaris-dev-shop-kilo@github:Shaisolaris/solaris-dev-shop-kilo#cfd9a91b475f7f3ab3f1d815cd959e4b07aaefd2'
 ```
 
-Keep the package name before `@github:`. This exact public source revision passed the real Kilo V2 localhost skill API on macOS arm64: all 62 complete canonical bodies, descriptions and file locations; all 1972 profile files and executable modes; all 1196 original source hashes; all 62 helper contexts; and an actual coordinator assignment to the code reviewer. The unchanged provenance checker reports consistency. See [NATIVE-QA.json](NATIVE-QA.json) and the reproducible [native verifier](tools/verify-native-kilo.py).
+The immutable source above is the exact native payload; publication documentation/CI files are separate. Kilo7.8.15's actual V2 authenticated loopback API returned all62 canonical bodies, descriptions and locations; every file/mode, canonical digest,62 helper contexts, coordinator and composite provenance passed on macOS. See NATIVE-QA.json and tools/verify-native-kilo.py. No model, VSCode or TUI-session compatibility is inferred.
 
-This tests native discovery and deterministic local helper execution. It does not establish model inference quality, a VS Code listing, TUI-session compatibility, or Kilo endorsement. Python 3.10+ and PyYAML are needed for the local helpers. Each specialist's external tools retain their normal setup and approvals.
+Keep the package name before @github:. The official catalog still requires a working supported Git transport or a published npm package. Earlier0.63 transport diagnostics found unnamed references installed with zero workflows; those are historical controls, not a claim about an unrun0.64 transport. The V2 tracker is https://github.com/Kilo-Org/kilocode/issues/15307. No registry publication or catalog approval is claimed.
 
-## Marketplace status
-
-The official catalog supports `git:<repo>[@ref][#subpath]` or already-published npm registry packages. In Kilo 7.8.15, the tested catalog-style Git installer completed but the V2 API exposed no Solaris workflows. The unnamed npm Git and file-tarball variants also returned zero; the explicitly named npm-compatible Git and file-tarball variants both loaded all 62. Installer success alone is not a passing result.
-
-The working command above is a native public-source installation, **not an approved catalog entry**. A catalog PR is held until its accepted transport actually loads the package. No schema change, fake registry publication or provider guard bypass was used. The V2 migration tracker already includes Git plugin source support: [Kilo issue 15307](https://github.com/Kilo-Org/kilocode/issues/15307).
-
-## Source and safety boundaries
-
-The profile comes from [reviewed native source c69fbcf](https://github.com/Shaisolaris/solaris-dev-shop-plugins/commit/c69fbcf49e46da3837fcf75420b9914705b2eab7), path `harnesses/kilo`. This repository adds installation documentation and native CI; its runtime adapter and contained core bytes are unchanged. Native metadata, exact-source rebuild, composite provenance, negative controls and independent source review passed before this transport test.
-
-There are no runtime npm dependencies, install scripts, background jobs, model/provider configuration changes, permission auto-approvals or MCP placeholders. This package adds no new core employee capabilities and changes no release version, tag or asset. MIT licensed; Solaris Technologies, https://solaristek.com.
+Source: native 2e51c951ce4573c0ab7c5cc807118d6e0c5b815c, harnesses/kilo, core3a577e42. The same61 specialists, branding, local helpers and host permission boundaries are retained. No runtime npm dependency, install script, MCP placeholder, background job or provider/model change is declared. Python3.10+ and PyYAML are required for helpers. The old0.63 tags/assets are unchanged;0.64 is one coherent corrected milestone.

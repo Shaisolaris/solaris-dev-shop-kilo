@@ -1,24 +1,15 @@
 {
-  "host": "Kilo CLI7.8.15/Bun1.4.2 actual native authenticated localhost API",
-  "sourceRevision": "c69fbcf49e46da3837fcf75420b9914705b2eab7",
-  "publicRootRevision": "3e3c611e82bee0885721c238e5c09fd5dc0d7d13",
-  "nativeCatalog": 62,
-  "exactCanonicalBodiesDescriptionsAndLocations": 62,
-  "matchingProfileFilesAndModes": 1972,
-  "canonicalFiles": 1196,
+  "host": "Kilo 7.8.15",
+  "source": "cfd9a91b475f7f3ab3f1d815cd959e4b07aaefd2",
+  "transport": "named npm-compatible Git",
+  "nativeWorkflows": 62,
+  "matchingProfileFilesAndModes": 1973,
+  "canonicalFiles": 1197,
   "nativeCallerContexts": 62,
   "coordinatorAssignment": "solaris.code-reviewer",
   "compositeProvenance": "consistent",
   "modelCalls": 0,
   "pass": true,
   "os": "macOS arm64",
-  "scope": "Native V2 authenticated localhost skill API and actual local helpers; no model inference or VS Code claim",
-  "rejectedTransports": [
-    "unnamed github: npm-compatible reference",
-    "unnamed git+https: npm-compatible reference",
-    "unnamed file: tarball",
-    "catalog custom git: monorepo reference"
-  ],
-  "diagnostic": "Named Git and named file-tarball each passed; matching unnamed forms installed but returned zero Solaris rows. No provider cache or binary was patched.",
-  "catalogStatus": "Held: the catalog does not accept the passing named npm-compatible Git syntax."
+  "scope": "Actual authenticated V2 API and all product files/modes/callers; no model/VSCode/TUI claim"
 }
