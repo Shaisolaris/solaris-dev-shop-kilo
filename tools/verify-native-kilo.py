@@ -110,7 +110,7 @@ def main():
                 assert actual['content'] == expected, item['name']
                 result = subprocess.check_output([sys.executable, '-B', str(root / 'skills' / item['name'] / 'scripts/run.py'),
                                                   '--context'], cwd=workspace, env=env, text=True, timeout=15)
-                assert json.loads(result)['source_commit'] == '0391e15cc52ddfa88a6c02b5997fd9955e214491'
+                assert json.loads(result)['source_commit'] == 'cd1898c6dc062a2dcf01a56b53403023c1994c8d'
             provenance = json.loads((root / 'SOLARIS-BUILD-SOURCE.json').read_text())
             assert len(provenance['canonical_files']) == 1200
             for path, digest in provenance['canonical_files'].items():
