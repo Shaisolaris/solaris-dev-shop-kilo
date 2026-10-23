@@ -7,7 +7,9 @@
   "specialists": 61,
   "coordinator": 1,
   "newCoreEmployeeCapabilities": 0,
-  "transportStatus": "Complete0.65 source prepared; fresh native Git installation is a release gate, not yet claimed.",
+  "transportStatus": "Native CI installs the immutable pure-profile commit; publication support files remain on main/review branch separately.",
   "scope": "Native V2 skill catalog plus deterministic local callers. No model, VS Code, TUI-session or authority-grant claim.",
-  "previousTestedRootRevision": "cfd9a91b475f7f3ab3f1d815cd959e4b07aaefd2"
+  "previousTestedRootRevision": "cfd9a91b475f7f3ab3f1d815cd959e4b07aaefd2",
+  "installProfileRevision": "a070b45c620cc56e7e73e012bbb841d0ac9c9bf3",
+  "installProfileTree": "b43e9ceca7d82e015687017bd419433b1d617063"
 }
