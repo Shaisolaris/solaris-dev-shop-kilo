@@ -1,13 +1,13 @@
 {
   "sourceRepository": "https://github.com/Shaisolaris/solaris-dev-shop-plugins",
-  "sourceRevision": "2e51c951ce4573c0ab7c5cc807118d6e0c5b815c",
+  "sourceRevision": "83fcb4fe0738bb4fed75716c4ec85340822a74bd",
   "sourcePath": "harnesses/kilo",
-  "profileFiles": 1973,
-  "canonicalFiles": 1197,
+  "profileFiles": 1976,
+  "canonicalFiles": 1199,
   "specialists": 61,
   "coordinator": 1,
   "newCoreEmployeeCapabilities": 0,
-  "transportStatus": "Native7.8.15 V2 named npm-compatible public Git installation passed on macOS; catalog git: transport remains held",
+  "transportStatus": "Complete0.65 source prepared; fresh native Git installation is a release gate, not yet claimed.",
   "scope": "Native V2 skill catalog plus deterministic local callers. No model, VS Code, TUI-session or authority-grant claim.",
-  "testedRootRevision": "cfd9a91b475f7f3ab3f1d815cd959e4b07aaefd2"
+  "previousTestedRootRevision": "cfd9a91b475f7f3ab3f1d815cd959e4b07aaefd2"
 }
