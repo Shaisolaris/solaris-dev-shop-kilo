@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           repository: Shaisolaris/solaris-dev-shop-plugins
-          ref: 2e51c951ce4573c0ab7c5cc807118d6e0c5b815c
+          ref: 83fcb4fe0738bb4fed75716c4ec85340822a74bd
           path: reference
           persist-credentials: false
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
@@ -45,6 +45,6 @@ jobs:
           python -m pip install PyYAML==6.0.3
       - name: Actual public Git install, 62 complete native bodies, source bytes and callers
         env:
-          SOURCE_REVISION: cfd9a91b475f7f3ab3f1d815cd959e4b07aaefd2
+          SOURCE_REVISION: a070b45c620cc56e7e73e012bbb841d0ac9c9bf3
         run: |
           python -B package/tools/verify-native-kilo.py --cli "$RUNNER_TEMP/solaris-kilo-host/node_modules/.bin/kilo" --reference reference/harnesses/kilo --ref "$SOURCE_REVISION" --work "$RUNNER_TEMP/solaris-kilo-test"

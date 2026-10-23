@@ -99,7 +99,7 @@ def main():
                 assert target.is_file() and not target.is_symlink() and target.read_bytes() == source.read_bytes(), source
                 assert bool(target.stat().st_mode & 0o111) == bool(source.stat().st_mode & 0o111), source
                 count += 1
-            assert count == 1973, count
+            assert count == 1976, count
             by_name = {item['name']: item for item in rows}
             for item in index:
                 actual = by_name[item['name']]
@@ -110,9 +110,9 @@ def main():
                 assert actual['content'] == expected, item['name']
                 result = subprocess.check_output([sys.executable, '-B', str(root / 'skills' / item['name'] / 'scripts/run.py'),
                                                   '--context'], cwd=workspace, env=env, text=True, timeout=15)
-                assert json.loads(result)['source_commit'] == '3a577e42c48473f6ef8680950dd55c067820d5d3'
+                assert json.loads(result)['source_commit'] == '0d2ae8e76cba4e56dc01d9c621e553179b34c40e'
             provenance = json.loads((root / 'SOLARIS-BUILD-SOURCE.json').read_text())
-            assert len(provenance['canonical_files']) == 1197
+            assert len(provenance['canonical_files']) == 1199
             for path, digest in provenance['canonical_files'].items():
                 mapped = provenance.get('source_path_map', {}).get(path, path)
                 assert hashlib.sha256((root / mapped).read_bytes()).hexdigest() == digest, path
@@ -128,7 +128,7 @@ def main():
             check = json.loads(result)
             assert check['result'] == 'consistent' and not check['findings']
             print(json.dumps({'host': 'Kilo ' + version, 'source': args.ref, 'transport': 'named npm-compatible Git',
-                              'nativeWorkflows': len(rows), 'matchingProfileFilesAndModes': count, 'canonicalFiles': 1197,
+                              'nativeWorkflows': len(rows), 'matchingProfileFilesAndModes': count, 'canonicalFiles': 1199,
                               'nativeCallerContexts': 62, 'coordinatorAssignment': 'solaris.code-reviewer',
                               'compositeProvenance': 'consistent', 'modelCalls': 0, 'pass': True}, indent=2))
         finally:
