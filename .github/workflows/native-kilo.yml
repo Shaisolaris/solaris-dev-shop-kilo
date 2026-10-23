@@ -45,6 +45,6 @@ jobs:
           python -m pip install PyYAML==6.0.3
       - name: Actual public Git install, 62 complete native bodies, source bytes and callers
         env:
-          SOURCE_REVISION: a070b45c620cc56e7e73e012bbb841d0ac9c9bf3
+          SOURCE_REVISION: 4e748034dd953306e8309a2cbf9c080727f143df
         run: |
           python -B package/tools/verify-native-kilo.py --cli "$RUNNER_TEMP/solaris-kilo-host/node_modules/.bin/kilo" --reference reference/harnesses/kilo --ref "$SOURCE_REVISION" --work "$RUNNER_TEMP/solaris-kilo-test"

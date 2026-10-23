@@ -1,6 +1,9 @@
 {
-  "currentCandidate": "0.66.0",
-  "currentState": "Fresh exact-revision native verification pending",
+  "sourceVersion": "0.66.0",
+  "nativeTestInputRevision": "4e748034dd953306e8309a2cbf9c080727f143df",
+  "profileFilesAndModes": 1977,
+  "canonicalFiles": 1200,
+  "currentEvidence": "Exact native Git installation is verified by .github/workflows/native-kilo.yml; final accepted release receipt records its outcome.",
   "historical065Baseline": {
     "currentCandidate": "0.65.0",
     "currentState": "Fresh native runtime verification pending",
