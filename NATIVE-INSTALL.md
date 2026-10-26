@@ -1,9 +1,9 @@
-# Solaris Dev Shop kilo0.66.0 candidate
+# Solaris Dev Shop for kilo — 0.68.0 candidate
 
-Complete61 specialist workflows plus coordinator. Source: https://github.com/Shaisolaris/solaris-dev-shop-plugins/tree/10dbf16811c40735955ba425b77a661c0dd0e973/harnesses/kilo. All 1976 profile files/modes match that source, retaining1,200 canonical hashes. Native CI verifies the actual client installation before release; prior0.65 results are historical, not relabeled as current runs.
+61 specialist workflows plus Chief of Staff: 62 workflows. Complete native profile: 1978 files with executable modes retained, including all 1,201 canonical core files. Exact source: https://github.com/Shaisolaris/solaris-dev-shop-plugins/tree/0ce43cd9a550a033a40b4e1f429a6c3c138802c2/harnesses/kilo.
 
-Install the whole package through the normal host plugin manager at an exact reviewed public commit. Python3.10+ and host permissions apply. Local routing returns an assignment; it does not execute specialist work or prove output correctness. No added account grants, MCP server, model/provider changes, automatic lifecycle hooks or background schedule. The full package retains privileged optional workflows that require the operator’s appropriate tools and permissions.
+Native installation and runtime outcomes must be verified for this exact candidate before release; historical results are retained separately. Local routing returns an assignment and does not execute specialist work. Python 3.10+ and the host’s documented tools and permissions apply. Optional privileged workflows require explicit task scope and authorization; loading the package does not install services or enable background jobs.
 
-Marketplace availability, registry publication and vendor approval are separate. ClawHub’s prior advisory is not cleared by source preparation. No prior release tag or asset is rewritten. Solaris Technologies, https://solaristek.com. MIT licensed.
+No new account grants, model/provider changes, automatic lifecycle hooks or schedules. Marketplace admission and required ClawHub scan clearance remain open. No existing tag or release asset is rewritten. Solaris Technologies, https://solaristek.com. MIT licensed.
 
-Exact native Git install source: `solaris-dev-shop-kilo@github:Shaisolaris/solaris-dev-shop-kilo#a070b45c620cc56e7e73e012bbb841d0ac9c9bf3`. Its tree is the complete 1,976-file native profile; publication-only CI/support metadata remains on the reviewed repository branch. This matches the existing transport architecture and preserves all 1,200 canonical files.
+Native exact-profile input: `solaris-dev-shop-kilo@github:Shaisolaris/solaris-dev-shop-kilo#f68254ab6bbf90296c175199ad7c82de34cc5a51`. This review-only branch contains exactly the native profile, without repository-only CI/support files.
